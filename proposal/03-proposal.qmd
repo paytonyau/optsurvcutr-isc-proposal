@@ -14,13 +14,7 @@ This is where the proposal should be outlined.
 
 > **Writing the code was the easy part. Validating it, maintaining it, and earning the community's trust to become a standard is the ongoing work this proposal supports.**
 
-`OptSurvCutR` was not yet on CRAN at our previous submission; it now is (v0.11.1). This proposal funds the next phase: a simulation study that tests the package's central stability claim, an update of the bioRxiv preprint [@yau2025preprint] for submission to *BMC Bioinformatics*, and, alongside `rOpenSci` review, an accessible entry point for researchers who are not R specialists. The plan runs over six months in three milestones (@sec-timeline).
-
-The benefit to the R community is filling a real gap in the survival-analysis ecosystem: existing cut-point packages (@sec-problem) find a significant threshold but do not test its reproducibility as standard practice. Closing that gap in one well-supported package, rather than leaving it to individual users to notice, benefits every downstream user of prognostic biomarker analysis in R.
-
-The plan runs over six months in three milestones, detailed in @sec-timeline.
-
-Full detail in @sec-timeline.
+`OptSurvCutR` was not yet on CRAN when we first applied; it is now (v0.11.1). This grant would pay for what comes next. First, a simulation study to test whether the stability grades mean what we say they mean. Second, an update to the bioRxiv preprint [@yau2025preprint] so we can submit to *BMC Bioinformatics*. Third, a simple script for researchers who are not R specialists, delivered while the `rOpenSci` review finishes. The plan runs over six months (@sec-timeline).
 
 ## Detail
 
@@ -45,8 +39,7 @@ Both deliverables sit on top of the existing package: the simulation study is a 
 
 ### Assumptions
 
-- The simulation study completes on the stated timeline; if the tiers do not calibrate as hypothesised, that is reported as a finding, not concealed.
-- *BMC Bioinformatics* acceptance is outside our control, so the milestone is scoped to submission.
+- The simulation finishes on time. If the tiers turn out not to calibrate, we will report that as a finding.
 - The target user for the script can run an R script but does not want to learn the full function-level API; if not, that milestone is re-scoped toward documentation.
 - `rOpenSci` review continues on a compatible timeline; if it stalls, we report progress rather than completion.
 

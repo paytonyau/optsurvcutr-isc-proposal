@@ -4,13 +4,9 @@
 
 Start-up is largely complete because the project is already in motion. The code is public on GitHub with issue tracking open, releases are documented in `NEWS.md`, and milestone updates will be posted to blogs. Licensing is described under Other aspects.
 
-- **Collaboration platform:** existing public GitHub repository (`github.com/paytonyau/OptSurvCutR`), with issue tracking already open. No new platform setup required.
-- **License:** GPL-3 for the package (already set on CRAN); CC-BY for documentation and vignettes.
-- **Reporting framework:** a `NEWS.md` entry per release (existing practice, already followed through v0.11.1); milestone-linked updates posted to the R Consortium blog (see Other aspects, below) rather than a separate private reporting channel.
-
 ## Technical delivery
 
-**Milestone 1 - Simulation study (target: month 1-3; not yet started).** Data simulated under known one-cut and two-cut ground truths, across multiple sample sizes and event rates, testing whether the package's stability tiers predict out-of-sample recovery of the true threshold. Deliverable: public simulation code, results, and a written report.
+**Milestone 1 - Simulation study (target: month 1-3; a pilot run is done, the final study has not started).** Data simulated under known one-cut and two-cut ground truths, across multiple sample sizes and event rates, testing whether the package's stability tiers predict out-of-sample recovery of the true threshold. Deliverable: public simulation code, results, and a written report.
 
 **Milestone 2 - Preprint update and journal submission (target: month 3-5).** Update the bioRxiv preprint to incorporate Milestone 1's results and any `rOpenSci` review outcomes finalised by this point; submit the manuscript to *BMC Bioinformatics*. Deliverable: updated preprint and submitted manuscript.
 
@@ -30,9 +26,10 @@ Open-source under GPL-3 (package) and CC-BY (documentation and vignettes). Hoste
 ## Budget & funding plan
 
 | Milestone | Work | Requested amount |
-|---|---|---|
-| 1 - Simulation study | Design, run and report | $700 |
-| 2 - Preprint and submission | Update preprint, submit to *BMC Bioinformatics* | $700 |
-| 3 - Script and rOpenSci | Build script; respond to review | $700 |
+|------------------------|------------------------|------------------------|
+| 1 - Simulation study | Design, run and report | \$700 |
+| 2 - Preprint and submission | Update preprint, submit to *BMC Bioinformatics* | \$700 |
+| 3 - Script and rOpenSci | Build script; respond to review | \$700 |
+| **Total** |  | **\$2,100** |
 
-At 2 to 3 hours a week each over six months, that is about 65 hours each, or about 130 hours in total, costed at about $16 per hour. No other costs are included.
+At 2 to 3 hours a week each over six months, that is about 65 hours each, or about 130 hours in total, costed at about \$16 per hour. No other costs are included.

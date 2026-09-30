@@ -11,9 +11,3 @@ This proposal is a resubmission, narrowed in scope after informal feedback. It f
 3. **Clinician-runnable script and rOpenSci completion:** one script that runs the three-step workflow on a clinician's own data and produces a plain-language summary and standard plots, delivered alongside the remaining review actions.
 
 **Team and budget:** Payton (Tung On) Yau, author and maintainer, and Suhirthakumar Puvanendran, co-author, each contribute about 2 to 3 hours a week. We request $2,100, all of it labour (about 130 hours in total), divided equally across the three milestones.
-
-**Team:** Payton (Tung On) Yau, author and maintainer, and Suhirthakumar Puvanendran, co-author, each contributing about 2 to 3 hours a week.
-
-**Budget:** \$2,100 requested, all of it labour (about 130 hours across the two team members), divided equally across the three milestones.
-
-**Success** is measured by public, checkable outcomes: the simulation report, a journal submission record, the script running on the PBC example and an independent test dataset, the `rOpenSci` review thread, and trends in CRAN downloads and external issues.

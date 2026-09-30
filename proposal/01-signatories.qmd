@@ -33,5 +33,3 @@ None beyond the project team.
 ## Track record
 
 `OptSurvCutR` has already been used independently. A genomics group at CHU Sainte-Justine (Montreal, Canada) used its genetic search to select a polygenic-risk-score cut-point in the UK Biobank exome cohort (n = 493,659) for a 2026 medRxiv preprint on genetic risk factors for immune cytopenia [@dasilvafaria2026]. Analysis scripts they shared with us apply it in All of Us as well, and to a composite multi-variant score.
-
-That usage also illustrates the gap this proposal's milestones address. In the analysis code they published, every call uses the search step (`find_cutpoint()`) alone, and `validate_cutpoint()` is not called. We read this not as a criticism of a careful group, but as independent evidence that users reach for optimisation without stability validation unless the workflow makes validation the obvious next step. Closing that gap, for this package and for the wider R ecosystem, is what Milestone 3 (the clinician-facing script) and this project's broader validation work are for.
