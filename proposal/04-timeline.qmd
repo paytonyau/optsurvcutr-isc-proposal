@@ -19,7 +19,7 @@ Open-source under GPL-3 (package) and CC-BY (documentation and vignettes). Hoste
 - **Announcement post** for this grant, on acceptance
 - **Delivery blog posts** at months 3, 5 and 6, so progress is visible incrementally
 - **Social media** at each milestone
-- **Talks:** we have given talks at FOSDEM 2026 and R!sk 2026, and have submitted an abstract to the 3rd International Online Conference on Genes (2 to 4 December 2026, online); acceptance is pending.
+- **Talks:** given at FOSDEM 2026 and R!sk 2026; an abstract is submitted to the 3rd International Online Conference on Genes (2 to 4 December 2026), acceptance pending.
 - **ISC meetings:** available to attend or give a progress update if invited.
 - **User feedback:** when we learn of published or public use of the package (citations, preprints, GitHub issues), we will ask the authors for brief feedback and, with their permission, list the use case on a public users page. This feedback will test the assumption behind Milestone 3 that users want a simpler entry point.
 

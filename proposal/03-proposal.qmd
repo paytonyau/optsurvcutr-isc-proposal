@@ -29,9 +29,7 @@ Depending on project type the detail section should include:
 
 ### Minimum Viable Product
 
-The smallest complete deliverable is the simulation study: data simulated under known one-cut and two-cut ground truths, testing whether the stability tiers predict recovery of the true threshold out of sample.
-
-The manuscript is explicit about why this matters. It states that bootstrap resampling does not establish that a threshold will be recovered in an independent population, that this relationship has not been evaluated, and that the tier boundaries of 30% and 60% are "pragmatic conventions rather than calibrated thresholds." The simulation study is designed to test exactly that.
+The smallest complete deliverable is the simulation study. The manuscript is explicit about why this matters. It states that bootstrap resampling does not establish that a threshold will be recovered in an independent population, that this relationship has not been evaluated, and that the tier boundaries of 30% and 60% are "pragmatic conventions rather than calibrated thresholds." The simulation study is designed to test exactly that.
 
 ### Architecture
 

@@ -18,8 +18,6 @@ are proposed.
 
 **Suhirthakumar Puvanendran** - co-author of `OptSurvCutR`, actively contributing to the user experience, the four-tier stability reporting system, the simulation work, and the work this proposal funds. Registered Nurse (Adult) with a PhD in Bioinformatics (2025) · ORCID: [0000-0003-2346-0483](https://orcid.org/0000-0003-2346-0483)
 
-Together we maintain the package's CRAN release, its two vignettes and its bioRxiv preprint, and the package is under rOpenSci software review. Time commitment: 2-3 hrs/week each alongside other academic commitments.
-
 ## Contributors
 
 None beyond the project team.
