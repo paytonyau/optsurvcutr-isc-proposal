@@ -1,16 +1,16 @@
 # Executive Summary
 
-Survival analysis often requires splitting a continuous predictor, such as a biomarker or a lab value, into risk groups. The usual methods, a median split or a search for the single most significant cut-point, do not test whether the threshold would hold in another cohort, and the selection process itself inflates apparent significance. A threshold that fails to reproduce can misclassify patients in every cohort where it is later applied.
+Survival analysis often requires splitting a continuous predictor, such as a biomarker or a lab value, into risk groups. The usual methods, a median split or a search for the single most significant cut-point, do not check how stable the threshold is under resampling, and the selection process itself inflates apparent significance.
 
-`OptSurvCutR` is an R package, available on CRAN, that addresses this. It searches for cut-points while adjusting for covariates, supports more than two risk tiers, and uses bootstrap resampling to give each result an automated stability grade before it is reported. Its accompanying manuscript is under `rOpenSci` software review, and the package has already been used independently by a genomics group on UK Biobank and All of Us data.
+`OptSurvCutR` is an R package, available on CRAN, that addresses this. It searches for cut-points while adjusting for covariates, supports more than two risk tiers, and uses bootstrap resampling to give each result an automated stability grade before it is reported. The package is under rOpenSci software review, and has already been used independently by a genomics group on UK Biobank and All of Us data.
 
 This proposal is a resubmission, narrowed in scope after informal feedback. It funds the next phase in three milestones over six months:
 
 1. **Simulation study:** test, on data with known thresholds, whether the stability tiers predict recovery of the true threshold out of sample. A null result will be reported as a finding.
-2. **Preprint update and journal submission:** add the simulation results and `rOpenSci` outcomes, and submit to *BMC Bioinformatics* (submission, not acceptance).
-3. **Clinician-runnable script and `rOpenSci` completion:** one script that runs the three-step workflow on a clinician's own data and produces a plain-language summary and standard plots, delivered alongside the remaining review actions.
+2. **Preprint update and journal submission:** add the simulation results and rOpenSci outcomes, and submit to *BMC Bioinformatics* (submission, not acceptance).
+3. **Clinician-runnable script and rOpenSci completion:** one script that runs the three-step workflow on a clinician's own data and produces a plain-language summary and standard plots, delivered alongside the remaining review actions.
 
-**Deliverables:** public simulation code, results and report; the updated preprint and a submitted manuscript; the script with a usage guide and a worked PBC example; and `rOpenSci` acceptance, or a documented list of remaining actions.
+**Team and budget:** Payton (Tung On) Yau, author and maintainer, and Suhirthakumar Puvanendran, co-author, each contribute about 2 to 3 hours a week. We request $2,100, all of it labour (about 130 hours in total), divided equally across the three milestones.
 
 **Team:** Payton (Tung On) Yau, author and maintainer, and Suhirthakumar Puvanendran, co-author, each contributing about 2 to 3 hours a week.
 

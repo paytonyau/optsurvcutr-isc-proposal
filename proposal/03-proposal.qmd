@@ -14,7 +14,7 @@ This is where the proposal should be outlined.
 
 > **Writing the code was the easy part. Validating it, maintaining it, and earning the community's trust to become a standard is the ongoing work this proposal supports.**
 
-Since our previous submission, `OptSurvCutR` has been accepted onto CRAN (v0.10, and now v0.11.1). It was not yet on CRAN at the time of that submission and has since had a post-acceptance maintenance release. This proposal funds the next phase: completing and reporting a simulation study that empirically tests the package's central stability claim; using that study to finish an already-planned update of the bioRxiv preprint [@yau2025preprint] ahead of submission to *BMC Bioinformatics*; and, alongside completing `rOpenSci` review, building an accessible entry point for researchers who are not R specialists.
+`OptSurvCutR` was not yet on CRAN at our previous submission; it now is (v0.11.1). This proposal funds the next phase: a simulation study that tests the package's central stability claim, an update of the bioRxiv preprint [@yau2025preprint] for submission to *BMC Bioinformatics*, and, alongside `rOpenSci` review, an accessible entry point for researchers who are not R specialists. The plan runs over six months in three milestones (@sec-timeline).
 
 The benefit to the R community is filling a real gap in the survival-analysis ecosystem: existing cut-point packages (@sec-problem) find a significant threshold but do not test its reproducibility as standard practice. Closing that gap in one well-supported package, rather than leaving it to individual users to notice, benefits every downstream user of prognostic biomarker analysis in R.
 
@@ -45,11 +45,11 @@ Both deliverables sit on top of the existing package: the simulation study is a 
 
 ### Assumptions
 
-- The simulation study completes on the stated timeline once started; if the tier system does not calibrate as hypothesised, that is reported as a genuine finding in the preprint update, not concealed.
-- *BMC Bioinformatics* review proceeds on a normal journal timeline; submission itself is within this project's control, acceptance is not, and the corresponding milestone is scoped to "submitted," not "accepted."
-- The target user for the clinician-facing script can run an R script but does not want to learn the package's full function-level API. If this assumption is wrong, the script's value is much smaller, and that milestone should be re-scoped toward documentation instead.
-- `rOpenSci` review continues on a timeline compatible with the proposal window; if review stalls for reasons outside this project's control, that milestone may need to report progress rather than completion.
+- The simulation study completes on the stated timeline; if the tiers do not calibrate as hypothesised, that is reported as a finding, not concealed.
+- *BMC Bioinformatics* acceptance is outside our control, so the milestone is scoped to submission.
+- The target user for the script can run an R script but does not want to learn the full function-level API; if not, that milestone is re-scoped toward documentation.
+- `rOpenSci` review continues on a compatible timeline; if it stalls, we report progress rather than completion.
 
 ### External dependencies
 
-`survival`, `survminer`, `rgenoud`, `Rcpp`, `ggplot2`, `patchwork`, `cli`, `tidyr`, `rlang`, `foreach`, `doParallel` and `doRNG` (the package's Imports at v0.11.1; see DESCRIPTION); no new external dependencies are anticipated for the simulation study or the clinician-facing script. `rOpenSci` review timing is an external dependency outside this project's direct control (see Assumptions, above).
+`survival`, `survminer`, `rgenoud`, `Rcpp`, `ggplot2`, `patchwork`, `cli`, `tidyr`, `rlang`, `foreach`, `doParallel` and `doRNG` (the package's Imports at v0.11.1). No new dependencies are anticipated.

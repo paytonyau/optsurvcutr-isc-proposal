@@ -2,7 +2,7 @@
 
 ## Start-up phase
 
-This is a resubmission of a project already in motion, so start-up is largely already complete rather than a new phase:
+Start-up is largely complete because the project is already in motion. The code is public on GitHub with issue tracking open, releases are documented in `NEWS.md`, and milestone updates will be posted to blogs. Licensing is described under Other aspects.
 
 - **Collaboration platform:** existing public GitHub repository (`github.com/paytonyau/OptSurvCutR`), with issue tracking already open. No new platform setup required.
 - **License:** GPL-3 for the package (already set on CRAN); CC-BY for documentation and vignettes.
@@ -14,27 +14,25 @@ This is a resubmission of a project already in motion, so start-up is largely al
 
 **Milestone 2 - Preprint update and journal submission (target: month 3-5).** Update the bioRxiv preprint to incorporate Milestone 1's results and any `rOpenSci` review outcomes finalised by this point; submit the manuscript to *BMC Bioinformatics*. Deliverable: updated preprint and submitted manuscript.
 
-**Milestone 3 - Clinician-runnable script and `rOpenSci` completion (target: month 3-6, ongoing throughout).** A single R script (or Quarto document) that takes a clinician's own dataset in a common shape - one row per patient, with a predictor, follow-up time, event status, and optional covariates - and runs the package's full three-step pipeline, producing a plain-language summary and standard plots, with configuration limited to naming a handful of columns. Delivered alongside continued implementation of `rOpenSci` review recommendations to completion. Deliverable: script, short usage guide, worked PBC example; `rOpenSci` acceptance or a clear remaining action list.
+**Milestone 3 - Clinician-runnable script and `rOpenSci` completion (target: month 3-6, ongoing throughout).** A single R script (or Quarto document) that takes a clinician's own dataset (one row per patient: predictor, follow-up time, event status, optional covariates), runs the package's three-step pipeline, and produces a plain-language summary and standard plots, configured by naming a handful of columns. It is delivered alongside the remaining `rOpenSci` recommendations. Deliverable: script, short usage guide and worked PBC example; `rOpenSci` acceptance or a clear remaining action list.
 
 ## Other aspects
 
 Open-source under GPL-3 (package) and CC-BY (documentation and vignettes). Hosted on the existing public GitHub repository, with issue tracking open to outside contributions. Publicity plan:
 
 - **Announcement post** for this grant, on acceptance
-- **Delivery blog posts** targeted to each milestone above (month 3, month 5, month 6) rather than a single post at the end, so progress is visible incrementally
+- **Delivery blog posts** at months 3, 5 and 6, so progress is visible incrementally
 - **Social media** at each milestone
-- **Conferences:** invited talks at FOSDEM 2026 and R!sk 2026 are an existing habit of sharing open-source work with the R and wider open-source communities. An abstract, "OptSurvCutR: finding biomarker thresholds that hold up," has been submitted to the 3rd International Online Conference on Genes (IOCGE 2026, 2 to 4 December 2026, online); acceptance is pending. Beyond this, progress will be shared through the milestone blog posts and the preprint.
+- **Talks:** we have given talks at FOSDEM 2026 and R!sk 2026, and have submitted an abstract to the 3rd International Online Conference on Genes (2 to 4 December 2026, online); acceptance is pending.
 - **ISC meetings:** available to attend or give a progress update if invited.
 - **User feedback:** when we learn of published or public use of the package (citations, preprints, GitHub issues), we will ask the authors for brief feedback and, with their permission, list the use case on a public users page. This feedback will test the assumption behind Milestone 3 that users want a simpler entry point.
 
 ## Budget & funding plan
 
-Requested total: **\$2,100**, allocated equally across three milestones:
-
 | Milestone | Work | Requested amount |
-|------------------------|------------------------|------------------------|
-| 1 - Simulation study | Design, run, and report the simulation (@sec-proposal) | \$700 |
-| 2 - Preprint & submission | Incorporate results, update preprint, submit to *BMC Bioinformatics* | \$700 |
-| 3 - Script & rOpenSci | Build and document clinician script; respond to review | \$700 |
+|---|---|---|
+| 1 - Simulation study | Design, run and report | $700 |
+| 2 - Preprint and submission | Update preprint, submit to *BMC Bioinformatics* | $700 |
+| 3 - Script and rOpenSci | Build script; respond to review | $700 |
 
-At the team's stated commitment of 2 to 3 hours a week each over six months, It is about 65 hours each, or about 130 hours in total, costed at about \$16 per hour. No other costs included.
+At 2 to 3 hours a week each over six months, that is about 65 hours each, or about 130 hours in total, costed at about $16 per hour. No other costs are included.
