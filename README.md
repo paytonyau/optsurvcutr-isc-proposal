@@ -1,66 +1,50 @@
-# isc-proposal
+# OptSurvCutR — R Consortium ISC Grant Proposal
 
-[![build-status](https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/actions/workflows/publish-proposal.yaml/badge.svg)](https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/actions/workflows/publish-proposal.yaml)
+[![build-status](https://github.com/paytonyau/optsurvcutr-isc-proposal/actions/workflows/publish-proposal.yaml/badge.svg)](https://github.com/paytonyau/optsurvcutr-isc-proposal/actions/workflows/publish-proposal.yaml)
 
-This repository is a boilerplate repository that helps you prepare your proposal for the [R Consortium](https://www.r-consortium.org).
+This repository contains our proposal to the R Consortium's Infrastructure
+Steering Committee (ISC), requesting support for continued development of
+[`OptSurvCutR`](https://CRAN.R-project.org/package=OptSurvCutR), an R
+package for finding and validating reproducible cut-points in
+time-to-event (survival) analysis.
 
-## Background
+`OptSurvCutR` is accepted on CRAN and its accompanying manuscript is
+currently under `rOpenSci` software review. This proposal funds three
+milestones: a simulation study validating the package's stability-tier
+system against known ground truth, an updated preprint and journal
+submission to *BMC Bioinformatics*, and a clinician-runnable script
+delivered alongside completion of `rOpenSci` review.
 
-Set up in 2015, the R Consortium is an organisation set up to help support the R Foundation, the R Community, and R users.
+This is a resubmission. We did not receive formal feedback on the
+previous round, but ISC committee member Josiah Parry gave informal
+feedback directly, which shaped the scope of this version — see the
+Signatories and Problem sections of the rendered proposal for detail.
 
-> The primary purpose of the R Consortium (collectively, the “Purpose”) is to:
->
->(a) advance the worldwide promotion of and support for the R open source language and environment as the preferred language for statistical computing and graphics (the “Environment”);
->
->(b) establish, maintain, seek support for, and develop infrastructure projects and technical and infrastructure collaboration initiatives related to the Environment, and such other initiatives as may be appropriate to support, enable and promote the Environment;
->
->(c) encourage and increase user adoption, involvement with, and contribution to, the Environment;
->
->(d) facilitate communication and collaboration among users and developers of the Environment, the R Consortium and the R Foundation for Statistical Computing (the “R Foundation”);
->
->(e) support and maintain policies set by the Board; and
->
->(f) undertake such other activities as may from time to time be appropriate to further the purposes and achieve the goals set forth above.
->
->In furtherance of these efforts, the R Consortium shall seek to solicit the participation of all interested parties on a fair, equitable and open basis.
+## Reading the proposal
 
-_Source: [R Consortium Bylaws, Section 1.4](https://r-consortium.org/rc-docs/R-Consortium-Bylaws-7-9-2024.pdf)_
+The rendered proposal is available at:
+**https://paytonyau.github.io/optsurvcutr-isc-proposal/**
 
-Delivery of the technical aspects for R Consortium's projects is overseen by the Infrastructure Steering Committee (ISC). The ISC is set up to receive, select, and manage projects that deliver upon the aims of the Consortium. The ISC will have an ongoing call for proposals and will select proposals to move into project stage approximately every six months. Within the process notes, it does say that if a proposal is unlikely to get funded then the proposers will be notified as soon as possible, partially so that re-submission can happen in the event fixable issues.
+Source sections live in `proposal/`:
 
-## Proposals
+| File | Section |
+|---|---|
+| `00-exec-summary.qmd` | Executive Summary |
+| `01-signatories.qmd` | Signatories |
+| `02-problemdefinition.qmd` | The Problem |
+| `03-proposal.qmd` | The Proposal |
+| `04-timeline.qmd` | Project Plan |
+| `05-success.qmd` | Success |
 
-Here we detail useful guidance notes on making proposals to the ISC but you should always consult the [ISC Grant Program](https://r-consortium.org/all-projects/callforproposals.html) page as there could be updates.
+## Related links
 
-- Try to complete as many of the sections of this boilerplate document as possible. Each section is included either for practical purposes or has been specifically requested by the ISC.
-- Add relevant additional sections, like the letter of support from an R Core member if you want a change to R itself.
-- Aim for 500-2500 written words. If the proposal is exceptionally long you risk the chance of it not being read thoroughly.
-- You *can* submit a proposal on your own, but it's really recommended to get engagement from the community (and the ISC) first.
-- Proposals should be submitted through the form on the [ISC Grant Program](https://r-consortium.org/all-projects/callforproposals.html) page.
-
-### Use of AI
-
-We value clarity and authenticity. Please use your own voice to tell your story. While AI tools are welcome for refining your ideas, please prioritize concise, high-impact responses. Avoid lengthy, generic prose; we want to understand the unique heart of your project and why it deserves support.
-
-## Making your proposal
-
-This is a boilerplate repository that you will need to fork, title appropriately and start filling in.
-
--   Use the "Use this template" button on GitHub
--   Create a new repository with a name to reflect your proposal
--   Create a new Positron/RStudio/IDE project from version control and use the git URL for the repo
--   Write an overview of the proposal instead of this boilerplate for the README
--   Start completing the relevant qmd pages of the proposal
--   Render `isc-proposal.qmd` to build the document locally
--   Regularly commit and push the changes to GitHub
--   Solicit feedback and contributions from others
-
-### Automatically generate your proposal
-
-This repository comes with a GitHub actions setup to automatically render your proposal to HTML and PDF formats.  To take advantage of it, you must publish the proposal to GitHub pages interactively the first time.
-
-From the command line, run `quarto publish gh-pages isc-proposal.qmd`.  After this, the GitHub action should run every time you push a commit to the main branch. Your rendered proposal can then be viewed at https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/
+- Package: `github.com/paytonyau/OptSurvCutR`
+- CRAN: `CRAN.R-project.org/package=OptSurvCutR`
+- Preprint: https://www.biorxiv.org/content/10.1101/2025.10.08.681246v2
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ISC Boilerplate</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/stephlocke" property="cc:attributionName" rel="cc:attributionURL">Stephanie Locke</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/RConsortium/isc-proposal" rel="dct:source">https://github.com/RConsortium/isc-proposal</a>.
+This proposal document is licensed under a
+[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+Based on the [R Consortium ISC proposal boilerplate](https://github.com/RConsortium/isc-proposal)
+by Stephanie Locke.

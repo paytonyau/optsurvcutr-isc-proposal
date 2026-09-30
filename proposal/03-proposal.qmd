@@ -1,4 +1,6 @@
-# The proposal
+# The proposal {#sec-proposal}
+
+```{=html}
 <!--
 How are you going to solve the problem? Include the concrete actions you
 will take and an estimated timeline. What are likely failure modes and
@@ -6,45 +8,48 @@ how will you recover from them?
 
 This is where the proposal should be outlined.
 -->
+```
 
 ## Overview
-<!--
-At a high-level address what your proposal is and how it will address
-the problem identified. Highlight any benefits to the R Community that
-follow from solving the problem. This should be your most compelling
-section.
 
-Include concrete actions you will take and estimated timeline.
--->
+> **Writing the code was the easy part. Validating it, maintaining it, and earning the community's trust to become a standard is the ongoing work this proposal supports.**
+
+Since our previous submission, `OptSurvCutR` has been accepted onto CRAN (v0.10, and now v0.11.1). It was not yet on CRAN at the time of that submission and has since had a post-acceptance maintenance release. This proposal funds the next phase: completing and reporting a simulation study that empirically tests the package's central stability claim; using that study to finish an already-planned update of the bioRxiv preprint [@yau2025preprint] ahead of submission to *BMC Bioinformatics*; and, alongside completing `rOpenSci` review, building an accessible entry point for researchers who are not R specialists.
+
+The benefit to the R community is filling a real gap in the survival-analysis ecosystem: existing cut-point packages (@sec-problem) find a significant threshold but do not test its reproducibility as standard practice. Closing that gap in one well-supported package, rather than leaving it to individual users to notice, benefits every downstream user of prognostic biomarker analysis in R.
+
+The plan runs over six months in three milestones, detailed in @sec-timeline.
+
+Full detail in @sec-timeline.
 
 ## Detail
+
+```{=html}
 <!--
 Go into more detail about the specifics of the project and how it delivers
 against the problem.
 
 Depending on project type the detail section should include:
 -->
+```
 
 ### Minimum Viable Product
 
-<!--
-What is the smallest thing you can build that delivers value to your users?
--->
+The smallest complete deliverable is the simulation study: data simulated under known one-cut and two-cut ground truths, testing whether the stability tiers predict recovery of the true threshold out of sample.
+
+The manuscript is explicit about why this matters. It states that bootstrap resampling does not establish that a threshold will be recovered in an independent population, that this relationship has not been evaluated, and that the tier boundaries of 30% and 60% are "pragmatic conventions rather than calibrated thresholds." The simulation study is designed to test exactly that.
 
 ### Architecture
 
-<!--
-What does the high-level architecture look like?
--->
+Both deliverables sit on top of the existing package: the simulation study is a self-contained Quarto document that tests its outputs against known ground truth, and the script wraps `find_cutpoint_number()`, `find_cutpoint()` and `validate_cutpoint()` without changing the statistical engines.
 
 ### Assumptions
 
-<!--
-What assumptions are you making that, if proven false, would invalidate the project?
--->
+- The simulation study completes on the stated timeline once started; if the tier system does not calibrate as hypothesised, that is reported as a genuine finding in the preprint update, not concealed.
+- *BMC Bioinformatics* review proceeds on a normal journal timeline; submission itself is within this project's control, acceptance is not, and the corresponding milestone is scoped to "submitted," not "accepted."
+- The target user for the clinician-facing script can run an R script but does not want to learn the package's full function-level API. If this assumption is wrong, the script's value is much smaller, and that milestone should be re-scoped toward documentation instead.
+- `rOpenSci` review continues on a timeline compatible with the proposal window; if review stalls for reasons outside this project's control, that milestone may need to report progress rather than completion.
 
 ### External dependencies
 
-<!--
-What external dependencies does the project have (e.g. libraries, services, other projects, etc.)?
--->
+`survival`, `survminer`, `rgenoud`, `Rcpp`, `ggplot2`, `patchwork`, `cli`, `tidyr`, `rlang`, `foreach`, `doParallel` and `doRNG` (the package's Imports at v0.11.1; see DESCRIPTION); no new external dependencies are anticipated for the simulation study or the clinician-facing script. `rOpenSci` review timing is an external dependency outside this project's direct control (see Assumptions, above).

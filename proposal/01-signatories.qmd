@@ -1,4 +1,6 @@
 # Signatories
+
+```{=html}
 <!--
 This section provides the ISC with a view of the support received from
 the community for a proposal. Acceptance isn't predicated on
@@ -8,25 +10,28 @@ accept outside input is also a good marker for project delivery.
 An optional section would be for R-Core signatories where changes to R
 are proposed.
 -->
+```
 
 ## Project team
-<!--
-Who are the people responsible for actually delivering the project if
-the proposal gets accepted and are already signed up and rearing to
-go? Briefly describe all participants and the skills they will bring
-to the project. Include public artifacts such as code repositories to
-show their tack record.
--->
+
+**Payton (Tung On) Yau** - author and maintainer of `OptSurvCutR` (CRAN, DOI: [10.32614/CRAN.package.OptSurvCutR](https://doi.org/10.32614/CRAN.package.OptSurvCutR)), lead on this proposal's delivery. Biomedical researcher (PhD by published work in Medicine, NTU 2023) with a combined wet-lab and computational background; currently an hourly-paid lecturer at Nottingham Trent University. [github.com/paytonyau/OptSurvCutR](https://github.com/paytonyau/OptSurvCutR) · ORCID [0000-0002-3283-0370](https://orcid.org/0000-0002-3283-0370)
+
+**Suhirthakumar Puvanendran** - co-author of `OptSurvCutR`, actively contributing to the user experience, the four-tier stability reporting system, the simulation work, and the work this proposal funds. Registered Nurse (Adult) with a PhD in Bioinformatics (2025) · ORCID: [0000-0003-2346-0483](https://orcid.org/0000-0003-2346-0483)
+
+Together we maintain the package's CRAN release, its two vignettes and its bioRxiv preprint, and the package is under rOpenSci software review. Time commitment: 2-3 hrs/week each alongside other academic commitments.
 
 ## Contributors
-<!--
-Who are the people who have actively helped with this proposal but
-won't necessarily be on the core project team later?
--->
+
+None beyond the project team.
 
 ## Consulted
-<!--
-Who has been given the opportunity to provide feedback on the
-proposal?
--->
 
+**Josiah Parry** (ISC committee member) gave informal, unofficial feedback on this project's previous submission, which shaped the scope and milestones of this resubmission (see @sec-problem and @sec-proposal). His comments do not imply ISC endorsement.
+
+**The rOpenSci review team:** the package is under rOpenSci software review ([review issue](https://github.com/ropensci/software-review/issues/777)), and we are aiming to meet its Gold standard.
+
+## Track record
+
+`OptSurvCutR` has already been used independently. A genomics group at CHU Sainte-Justine (Montreal, Canada) used its genetic search to select a polygenic-risk-score cut-point in the UK Biobank exome cohort (n≈493,659) for a 2026 medRxiv preprint on genetic risk factors for immune cytopenia [@dasilvafaria2026]. Analysis scripts they shared with us apply it in All of Us as well, and to a composite multi-variant score.
+
+That usage also illustrates the gap this proposal's milestones address. In the analysis code they published, every call uses the search step (`find_cutpoint()`) alone, and `validate_cutpoint()` is not called. We read this not as a criticism of a careful group, but as independent evidence that users reach for optimisation without stability validation unless the workflow makes validation the obvious next step. Closing that gap, for this package and for the wider R ecosystem, is what Milestone 3 (the clinician-facing script) and this project's broader validation work are for.

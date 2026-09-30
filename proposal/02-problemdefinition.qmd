@@ -1,24 +1,5 @@
----
-bibliography: references.bib
----
+# The Problem {#sec-problem}
 
-# The Problem
+Survival analysis often splits a continuous predictor, such as a biomarker, lab value or gene expression, into risk groups. The usual approach is a median split or a search for the single most significant cut-point. Neither checks how stable the cut-point is under resampling, and the search itself inflates apparent significance, so a threshold can look convincing in one cohort and misclassify patients in the next. This affects prognostic biomarker stratification in any field where continuous predictors and time-to-event outcomes co-occur. Solving it lets researchers report a threshold with evidence of how well it holds up, not a p-value alone.
 
-```{=html}
-<!--
-Outlining the issue / weak point / problem to be solved by this
-proposal. This should be a compelling section that sets the reader up
-for the next section - the proposed solution!
-
-It is important to cover:
-
- - [ ] What the problem is
- - [ ] Who it affects
- - [ ] Why is it a problem
- - [ ] What will solving the problem enable (why should it be solved)
- - [ ] Brief summary of existing work and previous attempts (e.g., relevant R packages)
- - [ ] If proposing changes to R itself: letter of support from R Core member
--->
-```
-
-An example in-text citation [@wickham2016].
+Existing R packages that search for a cut-point, such as `survminer` [@survminer] and `maxstat` [@maxstat], find a single statistically significant threshold. They do not adjust for covariates or check its stability as a built-in step. `OptSurvCutR` [@optsurvcutr] was built to close that gap: it adjusts for covariates, supports multiple risk tiers rather than forcing a binary split, and uses bootstrap resampling to assign an automated stability grade before a result is reported.

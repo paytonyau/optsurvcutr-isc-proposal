@@ -5,18 +5,28 @@ thorough understanding going in of what the risks are to delivery
 -->
 
 ## Definition of done
-<!--
-What does success look like?
--->
+
+- **Milestone 1:** the simulation report is public, including any failure of the tiers to calibrate.
+- **Milestone 2:** the manuscript is submitted to *BMC Bioinformatics* and the preprint updated (submission, not acceptance).
+- **Milestone 3:** the script runs on the PBC example and one independent dataset, and `rOpenSci` review reaches a decision or a documented list of remaining actions by month 6.
 
 ## Measuring success
-<!--
-How will we know when success is achieved, what markers can we use
-along the way
--->
+
+- CRAN download trend for `OptSurvCutR` (via `cranlogs`), as a proxy for
+  real uptake
+- Count of external issues and pull requests opened on the repository,
+  as a proxy for real external use rather than only author-driven
+  activity
+- `rOpenSci` review thread status, a public and independently verifiable
+  progress marker that does not depend on our own self-reporting
+- Simulation results themselves (@sec-proposal), whatever they show - 
+  a clean calibration result and a null result are both a form of
+  success for this milestone, since the goal is an honest answer to a
+  testable question, not a predetermined outcome
+- Number of feedback exchanges with users, and use cases listed publicly with permission
 
 ## Future work
-<!--
-How could this be extended / developed in the future by yourself
-and/or the community in general?
--->
+
+The method is not specific to medicine. Any time-to-event problem with a continuous covariate could use it, such as time to failure of a wind turbine component against vibration load, or time to tree mortality against soil moisture. Reaching those fields would need domain-specific worked examples and engagement with those communities, so it is a direction the design stays open to, not part of this grant.
+
+Two nearer extensions are also out of scope. If the simulation results are strong, a decision-consequence simulation could attach a modelled treatment effect to the risk groups. If the clinician script proves useful, a Shiny interface could serve users who do not write R.
