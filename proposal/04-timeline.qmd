@@ -32,4 +32,4 @@ Open-source under GPL-3 (package) and CC-BY (documentation and vignettes). Publi
 | 3 - Script and rOpenSci | Build script; respond to review | \$700 |
 | **Total** |  | **\$2,100** |
 
-At 2 to 3 hours a week each over six months, that is about 65 hours each, or about 130 hours in total, costed at about \$16 per hour. No other costs are included.
+At 2 to 3 hours a week each over six months, that is about 52.5 hours each, or about 105 hours in total, costed at about \$20 per hour. No other costs are included.
