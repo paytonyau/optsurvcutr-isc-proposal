@@ -10,4 +10,4 @@ This proposal is a resubmission, narrowed in scope after informal feedback. It f
 2. **Preprint update and journal submission:** add the simulation results and rOpenSci outcomes, and submit to *BMC Bioinformatics* (submission, not acceptance).
 3. **Clinician-runnable script and rOpenSci completion:** one script that runs the three-step workflow on a clinician's own data and produces a plain-language summary and standard plots, delivered alongside the remaining review actions.
 
-**Team and budget:** Payton (Tung On) Yau, author and maintainer, and Suhirthakumar Puvanendran, co-author, each contribute about 2 to 3 hours a week. We request $2,100, all of it labour (about 130 hours in total), divided equally across the three milestones.
+**Team and budget:** Payton (Tung On) Yau, author and maintainer, and Suhirthakumar Puvanendran, co-author, each contribute about 2 to 3 hours a week. We request $2,100, all of it labour (about 105 hours in total), divided equally across the three milestones.
