@@ -41,6 +41,7 @@ Source sections live in `proposal/`:
 - Package: `github.com/paytonyau/OptSurvCutR`
 - CRAN: `CRAN.R-project.org/package=OptSurvCutR`
 - Preprint: https://www.biorxiv.org/content/10.1101/2025.10.08.681246v2
+- Personal Blog (Payton): https://medium.com/@paytonyau/list/optsurvcutr-timetoevent-analysis-9cccbcdc0918
 
 ## License
 
